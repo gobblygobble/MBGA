@@ -1,0 +1,60 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Contract	contract.hpp	/^class Contract {$/;"	c
+Player	player.hpp	/^class Player {$/;"	c
+RLtype	common.hpp	/^enum RLtype {$/;"	g
+RLtype	common.hpp	/^typedef enum RLtype RLtype;$/;"	t	typeref:enum:RLtype
+age	player.hpp	/^    int age;$/;"	m	class:Player
+batting_hand	player.hpp	/^    RLtype batting_hand;$/;"	m	class:Player
+both	common.hpp	/^    both,$/;"	e	enum:RLtype
+bunt	player.hpp	/^    int bunt;               \/\/ how well the player can succeed bunts$/;"	m	class:Player
+changeup	common.hpp	/^    changeup,$/;"	e	enum:pitch
+circle_changeup	common.hpp	/^    circle_changeup,$/;"	e	enum:pitch
+command	player.hpp	/^    int command;            \/\/ how well the player can pitch to a certain location - has to do with BB and AVG -> WHIP$/;"	m	class:Player
+contact	player.hpp	/^    int contact;            \/\/ how well the player can contact a pitch - also supposedly raise expected batting average of player$/;"	m	class:Player
+contract	player.hpp	/^    Contract contract;$/;"	m	class:Player
+curve	common.hpp	/^    curve,$/;"	e	enum:pitch
+cutter	common.hpp	/^    cutter,$/;"	e	enum:pitch
+defence	player.hpp	/^    int defence;            \/\/ how well the player can field overall - includes sliding, catching, and not having errors$/;"	m	class:Player
+end_movement	common.hpp	/^    int end_movement;       \/\/ how filthy the pitch gets towards the end$/;"	m	struct:pitchtype
+eye	player.hpp	/^    int eye;                \/\/ batting eye$/;"	m	class:Player
+first_name	player.hpp	/^    std::string first_name;$/;"	m	class:Player
+first_year	contract.hpp	/^    int first_year;$/;"	m	class:Contract
+fork	common.hpp	/^    fork,$/;"	e	enum:pitch
+fourseam_fastball	common.hpp	/^    fourseam_fastball,$/;"	e	enum:pitch
+health	player.hpp	/^    int health;             \/\/ general health condition of player - low health means more injuries$/;"	m	class:Player
+is_batter	player.hpp	/^    bool is_batter;$/;"	m	class:Player
+is_pitcher	player.hpp	/^    bool is_pitcher;$/;"	m	class:Player
+knuckle_ball	common.hpp	/^    knuckle_ball,$/;"	e	enum:pitch
+last_name	player.hpp	/^    std::string last_name;$/;"	m	class:Player
+last_year	contract.hpp	/^    int last_year;$/;"	m	class:Contract
+left	common.hpp	/^    left,$/;"	e	enum:RLtype
+length	contract.hpp	/^    int length;$/;"	m	class:Contract
+maximum_stamina	player.hpp	/^    int maximum_stamina;    \/\/ maximum stamina of player$/;"	m	class:Player
+oneseam_fastball	common.hpp	/^    oneseam_fastball,   \/\/ is this even real?$/;"	e	enum:pitch
+option	contract.hpp	/^    int option;$/;"	m	class:Contract
+overall_movement	common.hpp	/^    int overall_movement;   \/\/ how much the pitch moves overall$/;"	m	struct:pitchtype
+palmball	common.hpp	/^    palmball,$/;"	e	enum:pitch
+pitch	common.hpp	/^    enum pitch pitch;       \/\/ type of pitch$/;"	m	struct:pitchtype	typeref:enum:pitchtype::pitch
+pitch	common.hpp	/^enum pitch {$/;"	g
+pitching_hand	player.hpp	/^    RLtype pitching_hand;$/;"	m	class:Player
+pitchtype	common.hpp	/^struct pitchtype {$/;"	s
+pitchtype	common.hpp	/^typedef struct pitchtype pitchtype;$/;"	t	typeref:struct:pitchtype
+player_id	player.hpp	/^    int player_id;$/;"	m	class:Player
+power	player.hpp	/^    int power;              \/\/ batting power - preferrable to have a weak correlation with velocity from pitching stats and throw_power from fielding_stats;$/;"	m	class:Player
+right	common.hpp	/^    right,$/;"	e	enum:RLtype
+running	player.hpp	/^    int running;            \/\/ how fast the player can run, both on bases and while fielding$/;"	m	class:Player::std
+screwball	common.hpp	/^    screwball,$/;"	e	enum:pitch
+slider	common.hpp	/^    slider,$/;"	e	enum:pitch
+slurve	common.hpp	/^    slurve,             \/\/ is this even real?$/;"	e	enum:pitch
+splitter	common.hpp	/^    splitter,$/;"	e	enum:pitch
+stamina	player.hpp	/^    int stamina;            \/\/ current stamina of player$/;"	m	class:Player
+throw_accuracy	player.hpp	/^    int throw_accuracy;     \/\/ how accurate the player can throw while fielding$/;"	m	class:Player
+throw_power	player.hpp	/^    int throw_power;        \/\/ how strong the player can throw while fielding - preferred by OF, C, and 3B (SS)$/;"	m	class:Player
+total_salary	contract.hpp	/^    int total_salary;$/;"	m	class:Contract
+twoseam_fastball	common.hpp	/^    twoseam_fastball,$/;"	e	enum:pitch
+velocity	player.hpp	/^    int velocity;           \/\/ velocity of pitch - should have a correlation with the throw_power from fielding stats$/;"	m	class:Player
