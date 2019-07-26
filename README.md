@@ -1,6 +1,5 @@
 # MBGA
-
-MBGA (Make Baseball Great Again) is a baseball management game in words, instead of graphics.
+MBGA (Make Baseball Great Again): classic baseball management game
 
 You get to run your own baseball team. Make sure to satisfy your fans with results!
 
