@@ -4,57 +4,136 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARI	common.hpp	/^    ARI, COL, LAD, SD, SF,$/;"	e	enum:team
+ATL	common.hpp	/^    ATL, MIA, NYM, PHI, WSH,$/;"	e	enum:team
+BAL	common.hpp	/^    BAL, BOS, NYY, TB, TOR,$/;"	e	enum:team
+BOS	common.hpp	/^    BAL, BOS, NYY, TB, TOR,$/;"	e	enum:team
+BatStatistic	statistic.cpp	/^BatStatistic::BatStatistic(int current_year, enum team current_team, position current_position) {$/;"	f	class:BatStatistic
+BatStatistic	statistic.hpp	/^class BatStatistic {$/;"	c
+CATCHER	common.hpp	/^    CATCHER,$/;"	e	enum:position
+CENTER_FIELD	common.hpp	/^    CENTER_FIELD,$/;"	e	enum:position
+CHC	common.hpp	/^    CHC, CIN, MIL, PIT, STL,$/;"	e	enum:team
+CHW	common.hpp	/^    CHW, CLE, DET, KC, MIN,$/;"	e	enum:team
+CIN	common.hpp	/^    CHC, CIN, MIL, PIT, STL,$/;"	e	enum:team
+CLE	common.hpp	/^    CHW, CLE, DET, KC, MIN,$/;"	e	enum:team
+COL	common.hpp	/^    ARI, COL, LAD, SD, SF,$/;"	e	enum:team
 Contract	contract.hpp	/^class Contract {$/;"	c
+DESIGNATED_HITTER	common.hpp	/^    DESIGNATED_HITTER,$/;"	e	enum:position
+DET	common.hpp	/^    CHW, CLE, DET, KC, MIN,$/;"	e	enum:team
+FIRST_BASE	common.hpp	/^    FIRST_BASE,$/;"	e	enum:position
+GetBA	statistic.cpp	/^float BatStatistic::GetBA() {$/;"	f	class:BatStatistic
+GetOBP	statistic.cpp	/^float BatStatistic::GetOBP() {$/;"	f	class:BatStatistic
+GetOPS	statistic.cpp	/^float GetOPS() {$/;"	f
+GetSLG	statistic.cpp	/^float BatStatistic::GetSLG() {$/;"	f	class:BatStatistic
+GetTB	statistic.cpp	/^int GetTB() {$/;"	f
+GetXBH	statistic.cpp	/^int GetXBH() {$/;"	f
+HOU	common.hpp	/^    HOU, LAA, OAK, SEA, TEX,$/;"	e	enum:team
+KC	common.hpp	/^    CHW, CLE, DET, KC, MIN,$/;"	e	enum:team
+LAA	common.hpp	/^    HOU, LAA, OAK, SEA, TEX,$/;"	e	enum:team
+LAD	common.hpp	/^    ARI, COL, LAD, SD, SF,$/;"	e	enum:team
+LEFT_FIELD	common.hpp	/^    LEFT_FIELD,$/;"	e	enum:position
+MAXSTAT	common.cpp	/^int MAXSTAT = 150;$/;"	v
+MIA	common.hpp	/^    ATL, MIA, NYM, PHI, WSH,$/;"	e	enum:team
+MIL	common.hpp	/^    CHC, CIN, MIL, PIT, STL,$/;"	e	enum:team
+MIN	common.hpp	/^    CHW, CLE, DET, KC, MIN,$/;"	e	enum:team
+MINSTAT	common.cpp	/^int MINSTAT = 50;$/;"	v
+NYM	common.hpp	/^    ATL, MIA, NYM, PHI, WSH,$/;"	e	enum:team
+NYY	common.hpp	/^    BAL, BOS, NYY, TB, TOR,$/;"	e	enum:team
+OAK	common.hpp	/^    HOU, LAA, OAK, SEA, TEX,$/;"	e	enum:team
+PHI	common.hpp	/^    ATL, MIA, NYM, PHI, WSH,$/;"	e	enum:team
+PIT	common.hpp	/^    CHC, CIN, MIL, PIT, STL,$/;"	e	enum:team
+PITCHER	common.hpp	/^    PITCHER,$/;"	e	enum:position
 Player	player.hpp	/^class Player {$/;"	c
+RIGHT_FIELD	common.hpp	/^    RIGHT_FIELD,$/;"	e	enum:position
 RLtype	common.hpp	/^enum RLtype {$/;"	g
 RLtype	common.hpp	/^typedef enum RLtype RLtype;$/;"	t	typeref:enum:RLtype
+SD	common.hpp	/^    ARI, COL, LAD, SD, SF,$/;"	e	enum:team
+SEA	common.hpp	/^    HOU, LAA, OAK, SEA, TEX,$/;"	e	enum:team
+SECOND_BASE	common.hpp	/^    SECOND_BASE,$/;"	e	enum:position
+SF	common.hpp	/^    ARI, COL, LAD, SD, SF,$/;"	e	enum:team
+SHORTSTOP	common.hpp	/^    SHORTSTOP,$/;"	e	enum:position
+STL	common.hpp	/^    CHC, CIN, MIL, PIT, STL,$/;"	e	enum:team
+TB	common.hpp	/^    BAL, BOS, NYY, TB, TOR,$/;"	e	enum:team
+TEX	common.hpp	/^    HOU, LAA, OAK, SEA, TEX,$/;"	e	enum:team
+THIRD_BASE	common.hpp	/^    THIRD_BASE,$/;"	e	enum:position
+TOR	common.hpp	/^    BAL, BOS, NYY, TB, TOR,$/;"	e	enum:team
+WSH	common.hpp	/^    ATL, MIA, NYM, PHI, WSH,$/;"	e	enum:team
 age	player.hpp	/^    int age;$/;"	m	class:Player
+at_bats	statistic.hpp	/^    int at_bats;$/;"	m	class:BatStatistic
+base_on_balls	statistic.hpp	/^    int base_on_balls;$/;"	m	class:BatStatistic
 batting_hand	player.hpp	/^    RLtype batting_hand;$/;"	m	class:Player
+batting_history	player.hpp	/^    std::vector<BatStatistic *> batting_history;$/;"	m	class:Player
 both	common.hpp	/^    both,$/;"	e	enum:RLtype
 bunt	player.hpp	/^    int bunt;               \/\/ how well the player can succeed bunts$/;"	m	class:Player
+caught_stealing	statistic.hpp	/^    int caught_stealing;$/;"	m	class:BatStatistic
 changeup	common.hpp	/^    changeup,$/;"	e	enum:pitch
 circle_changeup	common.hpp	/^    circle_changeup,$/;"	e	enum:pitch
 command	player.hpp	/^    int command;            \/\/ how well the player can pitch to a certain location - has to do with BB and AVG -> WHIP$/;"	m	class:Player
-contact	player.hpp	/^    int contact;            \/\/ how well the player can contact a pitch - also supposedly raise expected batting average of player$/;"	m	class:Player
-contract	player.hpp	/^    Contract contract;$/;"	m	class:Player
+contract	player.hpp	/^    Contract contract;      $/;"	m	class:Player
 curve	common.hpp	/^    curve,$/;"	e	enum:pitch
 cutter	common.hpp	/^    cutter,$/;"	e	enum:pitch
 defence	player.hpp	/^    int defence;            \/\/ how well the player can field overall - includes sliding, catching, and not having errors$/;"	m	class:Player
-end_movement	common.hpp	/^    int end_movement;       \/\/ how filthy the pitch gets towards the end$/;"	m	struct:pitchtype
+double_hits	statistic.hpp	/^    int double_hits;$/;"	m	class:BatStatistic
+double_plays	statistic.hpp	/^    int double_plays;$/;"	m	class:BatStatistic
+end_movement	common.hpp	/^    int end_movement;       \/\/ how filthy the pitch gets towards the end: 구위$/;"	m	struct:pitchtype
 eye	player.hpp	/^    int eye;                \/\/ batting eye$/;"	m	class:Player
 first_name	player.hpp	/^    std::string first_name;$/;"	m	class:Player
 first_year	contract.hpp	/^    int first_year;$/;"	m	class:Contract
 fork	common.hpp	/^    fork,$/;"	e	enum:pitch
 fourseam_fastball	common.hpp	/^    fourseam_fastball,$/;"	e	enum:pitch
+games_played	statistic.hpp	/^    int games_played;$/;"	m	class:BatStatistic
+get_position	common.cpp	/^std::string get_position(position pos) {$/;"	f
+get_team_name	common.cpp	/^std::string get_team_name(enum team name) {$/;"	f
 health	player.hpp	/^    int health;             \/\/ general health condition of player - low health means more injuries$/;"	m	class:Player
+hit_by_pitch	statistic.hpp	/^    int hit_by_pitch;$/;"	m	class:BatStatistic
+hits	statistic.hpp	/^    int hits;$/;"	m	class:BatStatistic
+home_runs	statistic.hpp	/^    int home_runs;$/;"	m	class:BatStatistic
 is_batter	player.hpp	/^    bool is_batter;$/;"	m	class:Player
 is_pitcher	player.hpp	/^    bool is_pitcher;$/;"	m	class:Player
 knuckle_ball	common.hpp	/^    knuckle_ball,$/;"	e	enum:pitch
 last_name	player.hpp	/^    std::string last_name;$/;"	m	class:Player
 last_year	contract.hpp	/^    int last_year;$/;"	m	class:Contract
+lcontact	player.hpp	/^    int lcontact;           \/\/ how well the player can contact a pitch against a left pitcher$/;"	m	class:Player
 left	common.hpp	/^    left,$/;"	e	enum:RLtype
 length	contract.hpp	/^    int length;$/;"	m	class:Contract
+main_position	statistic.hpp	/^    position main_position;$/;"	m	class:BatStatistic
 maximum_stamina	player.hpp	/^    int maximum_stamina;    \/\/ maximum stamina of player$/;"	m	class:Player
 oneseam_fastball	common.hpp	/^    oneseam_fastball,   \/\/ is this even real?$/;"	e	enum:pitch
 option	contract.hpp	/^    int option;$/;"	m	class:Contract
-overall_movement	common.hpp	/^    int overall_movement;   \/\/ how much the pitch moves overall$/;"	m	struct:pitchtype
+overall_movement	common.hpp	/^    int overall_movement;   \/\/ how much the pitch moves overall: 변화$/;"	m	struct:pitchtype
 palmball	common.hpp	/^    palmball,$/;"	e	enum:pitch
 pitch	common.hpp	/^    enum pitch pitch;       \/\/ type of pitch$/;"	m	struct:pitchtype	typeref:enum:pitchtype::pitch
 pitch	common.hpp	/^enum pitch {$/;"	g
 pitching_hand	player.hpp	/^    RLtype pitching_hand;$/;"	m	class:Player
+pitching_history	player.hpp	/^    std::vector<PitchStatistic *> pitching_history;$/;"	m	class:Player
 pitchtype	common.hpp	/^struct pitchtype {$/;"	s
 pitchtype	common.hpp	/^typedef struct pitchtype pitchtype;$/;"	t	typeref:struct:pitchtype
+plate_appearances	statistic.hpp	/^    int plate_appearances;$/;"	m	class:BatStatistic
 player_id	player.hpp	/^    int player_id;$/;"	m	class:Player
-power	player.hpp	/^    int power;              \/\/ batting power - preferrable to have a weak correlation with velocity from pitching stats and throw_power from fielding_stats;$/;"	m	class:Player
+position	common.hpp	/^enum position {$/;"	g
+position	common.hpp	/^typedef enum position position;$/;"	t	typeref:enum:position
+power	player.hpp	/^    int power;              \/\/ batting power$/;"	m	class:Player
+rcontact	player.hpp	/^    int rcontact;           \/\/ how well the player can contact a pitch against a right pitcher$/;"	m	class:Player
 right	common.hpp	/^    right,$/;"	e	enum:RLtype
 running	player.hpp	/^    int running;            \/\/ how fast the player can run, both on bases and while fielding$/;"	m	class:Player::std
+runs_batted_in	statistic.hpp	/^    int runs_batted_in;$/;"	m	class:BatStatistic
+runs_scored	statistic.hpp	/^    int runs_scored;$/;"	m	class:BatStatistic
+sacrifice_bunts	statistic.hpp	/^    int sacrifice_bunts;$/;"	m	class:BatStatistic
+sacrifice_flies	statistic.hpp	/^    int sacrifice_flies;$/;"	m	class:BatStatistic
 screwball	common.hpp	/^    screwball,$/;"	e	enum:pitch
 slider	common.hpp	/^    slider,$/;"	e	enum:pitch
 slurve	common.hpp	/^    slurve,             \/\/ is this even real?$/;"	e	enum:pitch
 splitter	common.hpp	/^    splitter,$/;"	e	enum:pitch
 stamina	player.hpp	/^    int stamina;            \/\/ current stamina of player$/;"	m	class:Player
+stolen_bases	statistic.hpp	/^    int stolen_bases;$/;"	m	class:BatStatistic
+strikeouts	statistic.hpp	/^    int strikeouts;$/;"	m	class:BatStatistic
+team	common.hpp	/^enum team {$/;"	g
+team	statistic.hpp	/^    std::vector<enum team> *team;$/;"	m	class:BatStatistic
 throw_accuracy	player.hpp	/^    int throw_accuracy;     \/\/ how accurate the player can throw while fielding$/;"	m	class:Player
 throw_power	player.hpp	/^    int throw_power;        \/\/ how strong the player can throw while fielding - preferred by OF, C, and 3B (SS)$/;"	m	class:Player
 total_salary	contract.hpp	/^    int total_salary;$/;"	m	class:Contract
+triple_hits	statistic.hpp	/^    int triple_hits;$/;"	m	class:BatStatistic
 twoseam_fastball	common.hpp	/^    twoseam_fastball,$/;"	e	enum:pitch
 velocity	player.hpp	/^    int velocity;           \/\/ velocity of pitch - should have a correlation with the throw_power from fielding stats$/;"	m	class:Player
+year	statistic.hpp	/^    int year;$/;"	m	class:BatStatistic
+~BatStatistic	statistic.cpp	/^BatStatistic::~BatStatistic() {$/;"	f	class:BatStatistic

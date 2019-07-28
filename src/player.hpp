@@ -4,6 +4,7 @@
 
 #include "common.hpp"
 #include "contract.hpp"
+#include "statistic.hpp"
 
 #pragma once
 
@@ -26,8 +27,9 @@ private:
     RLtype pitching_hand;
 
     // batting stats
-    int contact;            // how well the player can contact a pitch - also supposedly raise expected batting average of player
-    int power;              // batting power - preferrable to have a weak correlation with velocity from pitching stats and throw_power from fielding_stats;
+    int rcontact;           // how well the player can contact a pitch against a right pitcher
+    int lcontact;           // how well the player can contact a pitch against a left pitcher
+    int power;              // batting power
     int eye;                // batting eye
     int bunt;               // how well the player can succeed bunts
     // fielding stats
@@ -44,5 +46,7 @@ private:
     int stamina;            // current stamina of player
     // other info
     int health;             // general health condition of player - low health means more injuries
-    Contract contract;
+    Contract contract;      
+    std::vector<BatStatistic *> batting_history;
+    std::vector<PitchStatistic *> pitching_history;
 };
